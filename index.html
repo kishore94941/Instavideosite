@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194206365588876" crossorigin="anonymous"></script>
   <title>Anime Vault</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8194206365588876" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -32,23 +32,54 @@
       margin-bottom: 30px;
       line-height: 1.5;
     }
-    .link-button {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      color: white;
-      background-color: #e91e63;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .link-button:hover {
-      background-color: #c2185b;
-    }
     .ad-slot {
       margin: 30px 0;
+    }
+    .flip-card {
+      width: 320px;
+      height: 200px;
+      perspective: 1000px;
+      margin: 20px auto;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+    }
+    .flip-card-front {
+      background-color: #e91e63;
+    }
+    .flip-card-front .link-button {
+      margin: 0;
+      padding: 12px 28px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .flip-card-back {
+      background-color: #fff3e0;
+      color: black;
+      transform: rotateY(180deg);
+      font-weight: bold;
+      font-size: 1em;
     }
   </style>
 </head>
@@ -59,65 +90,403 @@
     For hidden gems — you're in the right place. <br>
     Click below to explore curated scenes, codes, and clips from your favorite anime episodes!</p>
 
-    <!-- Buttons and Ad Slots -->
-    <a href="number1.html" class="link-button">Number 1</a> <br>
-    <a href="number2.html" class="link-button">Number 2</a> <br>
-    <a href="number3.html" class="link-button">Number 3</a> <br>
-    <a href="number4.html" class="link-button">Number 4</a> <br>
+    <!-- Start Flip Buttons with Ads -->
+    <!-- You can copy this block to add more cards -->
 
-    <!-- Ad Slot 1 -->
+    <!-- Generate buttons dynamically -->
+    <!-- Number Buttons 1–16 -->
+    <!-- You can change the href and code per your need -->
+
+    <!-- BEGIN BUTTONS -->
+    <!-- Loop through 1 to 16 -->
+    <!-- Example: -->
+    <!-- You can copy and paste this 16 times with different codes -->
+
+    <!-- START NUMBER LOOP -->
+    <!-- Replace NUMBER and abc-XXX in each block -->
+
+    <!-- Example for Number 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number1.html" class="link-button">Number 1</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-001 
+          <strong>Name:</strong> The Cheating Wife
+        </div>
+      </div>
+    </div>
     <div class="ad-slot">
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-8194206365588876"
-           data-ad-slot="1234567890"
+           data-ad-slot="1001"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
 
-    <a href="number5.html" class="link-button">Number 5</a> <br>
-    <a href="number6.html" class="link-button">Number 6</a> <br>
-    <a href="number7.html" class="link-button">Number 7</a> <br>
-    <a href="number8.html" class="link-button">Number 8</a> <br>
-
-    <!-- Ad Slot 2 -->
+    <!-- You can copy the above block and update for Number 2–16 -->
+    <!-- Example: Number 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number2.html" class="link-button">Number 2</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
     <div class="ad-slot">
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-8194206365588876"
-           data-ad-slot="1234567891"
+           data-ad-slot="1002"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
 
-    <a href="number9.html" class="link-button">Number 9</a> <br>
-    <a href="number10.html" class="link-button">Number 10</a> <br>
-    <a href="number11.html" class="link-button">Number 11</a> <br>
-    <a href="number12.html" class="link-button">Number 12</a> <br>
 
-    <!-- Ad Slot 3 -->
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number3.html" class="link-button">Number 3</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
     <div class="ad-slot">
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-8194206365588876"
-           data-ad-slot="1234567892"
+           data-ad-slot="1002"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
 
-    <a href="number13.html" class="link-button">Number 13</a> <br>
-    <a href="number14.html" class="link-button">Number 14</a> <br>
-    <a href="number15.html" class="link-button">Number 15</a> <br>
-    <a href="number16.html" class="link-button">Number 16</a> <br>
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number4.html" class="link-button">Number 4</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number5.html" class="link-button">Number 5</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number6.html" class="link-button">Number 6</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number7.html" class="link-button">Number 7</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number8.html" class="link-button">Number 8</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number9.html" class="link-button">Number 9</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number10.html" class="link-button">Number 10</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number11.html" class="link-button">Number 11</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number12.html" class="link-button">Number 12</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number13.html" class="link-button">Number 13</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number14.html" class="link-button">Number 14</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number15.html" class="link-button">Number 15</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number16.html" class="link-button">Number 16</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="number17.html" class="link-button">Number 17</a>
+        </div>
+        <div class="flip-card-back">
+          🔐 Code: abc-002
+        </div>
+      </div>
+    </div>
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8194206365588876"
+           data-ad-slot="1002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- Repeat for Number 3 to 16 -->
+    <!-- END BUTTONS -->
+
   </div>
 </body>
 </html>
